@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Theme</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #004466;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        .backg {
+            position: relative;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.1);
+            transform: scale(0.7);
+        }
+
+        .planet {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: relative;
+            background-color: #ff9933;
+            top: 45px;
+            left: 220px;
+        }
+
+        .planet .r1,
+        .planet .r2,
+        .planet .r3,
+        .planet .r4,
+        .planet .r5,
+        .planet .r6,
+        .planet .r7,
+        .planet .r8 {
+            position: absolute;
+            border-radius: 50%;
+            background-color: #ffcc00;
+        }
+
+        .planet .r1 {
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: 0;
+            transform: rotate(-45deg);
+        }
+
+        .planet .r2 {
+            width: 150px;
+            height: 150px;
+            top: 20px;
+            left: 20px;
+        }
+
+        .planet .r3 {
+            width: 100px;
+            height: 100px;
+            top: 40px;
+            left: 40px;
+        }
+
+        .planet .r4 {
+            width: 50px;
+            height: 50px;
+            top: 80px;
+            left: 80px;
+        }
+
+        .planet .r5 {
+            width: 200px;
+            height: 200px;
+            top: 30px;
+            left: 30px;
+            transform: rotate(45deg);
+        }
+
+        .planet .r6 {
+            width: 150px;
+            height: 150px;
+            top: 50px;
+            left: 50px;
+        }
+
+        .planet .r7 {
+            width: 100px;
+            height: 100px;
+            top: 70px;
+            left: 70px;
+        }
+
+        .planet .r8 {
+            width: 50px;
+            height: 50px;
+            top: 90px;
+            left: 90px;
+        }
+
+        .planet .shad {
+            background-color: transparent;
+            box-shadow: 15px 15px rgba(204, 102, 0, 0.3);
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            bottom: 164px;
+            right: 16px;
+        }
+
+        .astro {
+            position: relative;
+            left: 131px;
+            bottom: 250px;
+            transform: rotate(-30deg);
+        }
+
+        .an {
+            animation-name: flo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+            bottom: 80px;
+            left: 20px;
+        }
+
+        @keyframes flo {
+            50% {
+                transform: translateY(30px);
+            }
+        }
+
+        .tank {
+            background-color: #a6a6a6;
+            height: 120px;
+            width: 120px;
+            border-radius: 10px;
+            position: relative;
+            left: 95px;
+            top: 50px;
+            transform: rotate(-30deg);
+        }
+
+        .helmet {
+            background-color: white;
+            height: 93px;
+            width: 100px;
+            border-radius: 45%;
+            position: relative;
+            left: 20px;
+            z-index: 5;
+        }
+
+        .glass {
+            background-color: #666666;
+            height: 60px;
+            width: 80px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+            position: relative;
+            left: 10px;
+            top: 7px;
+        }
+
+        .shine {
+            background-color: rgba(166, 166, 166, 0.7);
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            position: relative;
+            left: 10px;
+            top: 15px;
+        }
+
+        .dress {
+            background-color: #f2f2f2;
+            height: 100px;
+            width: 100px;
+            border-radius: 10%;
+            position: relative;
+            bottom: 5px;
+            left: 20px;
+        }
+
+        /* Invisible Button Style */
+        .invisible-button {
+            position: absolute;
+            top: 50%; /* Adjusted to cover the center area */
+            left: 50%;
+            width: 300px; /* Size of the clickable area */
+            height: 300px;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            background-color: transparent; /* Ensure it's invisible */
+            border: none; /* Remove any default button styling */
+        }
+    </style>
+</head>
+<body>
+    <div class="backg">
+        <div class="planet">
+            <div class="shad"></div>
+        </div>
+        <div class="an">
+            <div class="tank"></div>
+            <div class="astro">
+                <div class="helmet">
+                    <div class="glass">
+                        <div class="shine"></div>
+                    </div>
+                </div>
+                <div class="dress">
+                    <div class="c">
+                        <div class="btn1"></div>
+                        <div class="btn2"></div>
+                        <div class="btn3"></div>
+                        <div class="btn4"></div>
+                    </div>
+                </div>
+                <div class="handl">
+                    <div class="handl1">
+                        <div class="glovel">
+                            <div class="thumbl"></div>
+                            <div class="b2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="handr">
+                    <div class="handr1">
+                        <div class="glover">
+                            <div class="thumbr"></div>
+                            <div class="b1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="legl">
+                    <div class="bootl1">
+                        <div class="bootl2"></div>
+                    </div>
+                </div>
+                <div class="legr">
+                    <div class="bootr1">
+                        <div class="bootr2"></div>
+                    </div>
+                </div>
+                <div class="pipe">
+                    <div class="pipe2">
+                        <div class="pipe3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="invisible-button" onclick="window.location.href='main.html'"></button>
+</body>
+</html>
