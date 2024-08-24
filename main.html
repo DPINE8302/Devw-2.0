@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Win's˜ Portfolio</title>
-    <link rel="stylesheet" href="main.css"> <!-- Updated to main.css -->
+    <title>Win's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
     <!-- ScrollReveal Library for Scroll Animations -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        /* Additional styling for the video */
+        .feature-video {
+            text-align: center; /* Center the text */
+            margin-bottom: 5px; /* Space between text and iframe */
+        }
+
+        .feature-video iframe {
+            width: 80%; /* Adjust width as needed */
+            height: 555px; /* Adjust height as needed */
+            border: none;
+            margin-top: 0px; /* Space between text and iframe */
+        }
+    </style>
 </head>
 <body>
     <!-- Scroll Progress Bar -->
@@ -19,7 +33,8 @@
             <nav>
                 <ul>
                     <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#feature-video" class="nav-link">Feature Video</a></li>
+                    <li><a href="#collage" class="nav-link">Collage</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -40,7 +55,7 @@
     <section id="about">
         <div class="container">
             <h2 class="fade-in">About Me</h2>
-            <p class="fade-in">Hello, I'm Win, currently in Grade 10. I am passionate about technology, astronomy, photography, and film. I have notable achievements in robotics, English contests, and running. My goal is to transfer to SPSM School and ultimately study at Chulalongkorn University's Faculty of Communication Arts.</p>
+            <p class="fade-in">Hello, I'm Win, currently in Grade 10 in Bangkok. I am passionate about technology, astronomy, photography, and film. I have notable achievements in robotics, English contests, and running. My goal is to transfer to SPSM School and ultimately study at Chulalongkorn University's Faculty of Communication Arts.</p>
             
             <div class="quote fade-in">
                 <h3>Quote or Motto</h3>
@@ -62,39 +77,79 @@
                     <div class="skill-level" data-level="70%"></div>
                 </div>
             </div>
-            
-            <div class="timeline fade-in">
-                <h3>Achievements and Awards</h3>
-                <ul>
-                    <li>2022: Gold Award in Robotics</li>
-                    <li>2022: Gold Award in Robotics</li>
-                    <li>2023: Gold Award in Robotics</li>
-                    <li>2023: Gold Award in Robotics</li>
-                    <li>2023: English Contest Award</li>
-                    <li>2024: Silver Award at Regional English Contest</li>
-                    <li>2022: Gold Medal in Running</li>
-                    <li>2023: Silver Medal in Running</li>
-                    <li>2024: Silver Medal in Running</li>
-                </ul>
-            </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
+    <!-- Achievements and Awards Section -->
+    <section id="timeline-content">
         <div class="container">
-            <h2 class="fade-in">Portfolio</h2>
-            <div class="gallery fade-in">
-                <div class="gallery-item">
-                    <a href="https://www.instagram.com/Win.albums" target="_blank" class="button">Photography Portfolio</a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://www.youtube.com/channel/UCMQefq5ku1GHvTm50Ysixyg" target="_blank" class="button">YouTube Channel</a>
-                </div>
-            </div>
-            <div class="video fade-in">
-                <h3>Featured Video</h3>
+            <h2 class="fade-in">Achievements and Awards</h2>
+            <ul class="timeline fade-in">
+                <li class="event" data-date="2022">
+                    <h3>Gold Award in Robotics</h3>
+                    <p>Won the first of four gold awards in robotics, marking a significant achievement in technology.</p>
+                </li>
+                <li class="event" data-date="2023">
+                    <h3>Gold Award in Robotics</h3>
+                    <p>Secured another gold in robotics, solidifying expertise and commitment to technological innovation.</p>
+                </li>
+                <li class="event" data-date="2023">
+                    <h3>English Contest Award</h3>
+                    <p>Won an award in an English contest, showcasing linguistic skills and a passion for communication.</p>
+                </li>
+                <li class="event" data-date="2024">
+                    <h3>Silver Award at Regional English Contest</h3>
+                    <p>Earned a silver award at a regional level, demonstrating a continued dedication to excellence in English.</p>
+                </li>
+                <li class="event" data-date="2022">
+                    <h3>Gold Medal in Running</h3>
+                    <p>Achieved a gold medal in running, highlighting athletic prowess and determination.</p>
+                </li>
+                <li class="event" data-date="2023">
+                    <h3>Silver Medal in Running</h3>
+                    <p>Secured a silver medal in running, adding to a growing list of athletic accomplishments.</p>
+                </li>
+                <li class="event" data-date="2024">
+                    <h3>Silver Medal in Running</h3>
+                    <p>Won a silver medal, reaffirming a strong presence in athletic competitions.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Feature Video Section -->
+    <section id="feature-video">
+        <div class="container">
+            <h2 class="fade-in">Feature Video</h2>
+            <div class="feature-video">
                 <iframe src="https://www.youtube.com/embed/BMhot-xCYmk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Collage Section -->
+    <section id="collage">
+        <div class="container">
+            <h2 class="fade-in">Photo Collage</h2>
+            <div class="collage fade-in">
+                <div class="collage-item">
+                    <img src="P1.TIF" alt="Photo 1">
+                </div>
+                <div class="collage-item">
+                    <img src="P2.TIF" alt="Photo 2">
+                </div>
+                <div class="collage-item">
+                    <img src="P3.TIF" alt="Photo 3">
+                </div>
+                <div class="collage-item">
+                    <img src="P4.TIF" alt="Photo 4">
+                </div>
+                <div class="collage-item">
+                    <img src="P5.TIF" alt="Photo 5">
+                </div>
+                <div class="collage-item">
+                    <img src="P6.TIF" alt="Photo 6">
+                </div>
             </div>
         </div>
     </section>
@@ -120,6 +175,6 @@
     </footer>
 
     <!-- Custom JavaScript -->
-    <script src="main.js"></script> <!-- Updated to main.js -->
+    <script src="main.js"></script>
 </body>
 </html>
